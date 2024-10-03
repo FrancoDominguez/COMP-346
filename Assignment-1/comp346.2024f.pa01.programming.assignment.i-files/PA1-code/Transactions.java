@@ -1,30 +1,13 @@
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/** Transactions class
- *
- * @author Kerly Titus
- */
 public class Transactions {
-    
-    private String accountNumber;       /* Account number */
-    private String operationType;       /* Operation type : deposit, withdrawal, query */
-    private double transactionAmount;   /* Amount to deposit or withdraw */
-    private double transactionBalance;  /* Account balance after transaction */
-    private String transactionError;    /* Transaction error : NSF, invalid amount, invalind account, none */
-    private String transactionStatus;   /* Current transaction status : pending, sent, received, transferred, done */
-    
-    /** Constructor method of Transactions class
-         * 
-         * @return
-         * @param
-         */
-    Transactions()
-    {
+
+    private String accountNumber;
+    private String operationType;
+    private double transactionAmount;
+    private double transactionBalance;
+    private String transactionError;
+    private String transactionStatus;
+
+    Transactions() {
         accountNumber = " ";
         operationType = " ";
         transactionAmount = 0.00;
@@ -32,148 +15,58 @@ public class Transactions {
         transactionError = "none";
         transactionStatus = " ";
     }
-    
-     /**
-      *  Accessor method of Transactions class
-     * 
-     * @return accountNumber
-     * @param
-     */
-     public String getAccountNumber()
-     {
-         return accountNumber;
-     }
-         
-    /**
-     *  Mutator method of Transactions class
-     * 
-     * @return 
-     * @param accNumber
-     */
-     public void setAccountNumber(String accNumber)
-     { 
-         accountNumber = accNumber;
-     }
-     
-    /**
-     *  Accessor method of Transactions class
-     * 
-     * @return operationType
-     * @param
-     */
-     public String getOperationType()
-     {
-         return operationType;
-     }
-         
-    /**
-     *  Mutator method of Transactions class
-     * 
-     * @return 
-     * @param opType
-     */
-     public void setOperationType(String opType)
-     { 
-         operationType = opType;
-     }
-     
-    /**
-     *  Accessor method of Transactions class
-     * 
-     * @return transactionAmount
-     * @param
-     */
-     public double getTransactionAmount()
-     {
-         return transactionAmount;
-     }
-         
-    /**
-     *  Mutator method of Transactions class
-     * 
-     * @return 
-     * @param transmount
-     */
-     public void setTransactionAmount(double transAmount)
-     { 
-         transactionAmount = transAmount;
-     }
-     
-    /**
-     *  Accessor method of Transactions class
-     * 
-     * @return transactionBalance
-     * @param
-     */
-     public double getTransactionBalance()
-     {
-         return transactionBalance;
-     }
-         
-    /**
-     *  Mutator method of Transactions class
-     * 
-     * @return 
-     * @param transBalance
-     */
-     public void setTransactionBalance(double transBalance)
-     { 
-         transactionBalance = transBalance;
-     }
-     
-    /**
-     *  Accessor method of Transactions class
-     * 
-     * @return transactionError
-     * @param
-     */
-     public String getTransactionError()
-     {
-         return transactionError;
-     }
-     
-    /** 
-     * Mutator method of Transactions class
-     * 
-     * @return 
-     * @param transError
-     */
-     public void setTransactionError(String transError)
-     { 
-         transactionError = transError;
-     }
-     
-    /**
-     *  Accessor method of Transactions class
-     * 
-     * @return transactionStatus
-     * @param
-     */
-     public String getTransactionStatus()
-     {
-         return transactionStatus;
-     }
-     
-    /**
-     *  Mutator method of Transactions class
-     * 
-     * @return 
-     * @param transStatus
-     */
-     public void setTransactionStatus(String transStatus)
-     { 
-         transactionError = transStatus;
-     }
-     
-    /**
-     *  Create a String representation based on the Transactions Object
-     * 
-     * @return String representation
-     */
-    public String toString() 
-    {
-    	return ("\n Account number " + getAccountNumber() + " Account Balance " + getTransactionBalance() + " Message " + getTransactionError());
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public void setAccountNumber(String accNumber) {
+        accountNumber = accNumber;
+    }
+
+    public String getOperationType() {
+        return operationType;
+    }
+
+    public void setOperationType(String opType) {
+        operationType = opType;
+    }
+
+    public double getTransactionAmount() {
+        return transactionAmount;
+    }
+
+    public void setTransactionAmount(double transAmount) {
+        transactionAmount = transAmount;
+    }
+
+    public double getTransactionBalance() {
+        return transactionBalance;
+    }
+
+    public void setTransactionBalance(double transBalance) {
+        transactionBalance = transBalance;
+    }
+
+    public String getTransactionError() {
+        return transactionError;
+    }
+
+    public void setTransactionError(String transError) {
+        transactionError = transError;
+    }
+
+    public String getTransactionStatus() {
+        return transactionStatus;
+    }
+
+    public void setTransactionStatus(String transStatus) {
+        transactionError = transStatus;
+    }
+
+    public String toString() {
+        return ("\n Account number " + getAccountNumber() + " Account Balance " + getTransactionBalance() + " Message "
+                + getTransactionError());
     }
 
 }
-
